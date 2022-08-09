@@ -4,4 +4,8 @@ The RaspberryMount model is meant to be mounted using screws and the RaspberryDe
 
 Perlin noise data was generated using a program created by volzotan, [perlin noise generator](https://github.com/volzotan/tlpic/tree/master/generate)
 
-Printed from PETG since I have that on hand. Printed at 0.20 layer height, no supports required when printed on the side that doesn't have the sd card slot.
+<img src="https://github.com/Terminuszibda/OpenSCAD-projects/blob/main/RaspberryPieMount/images/opemscad.png" alt="Screw mount" width="600"/>
+
+Printed from PETG since I have that available. Printed at 0.20 layer height, no supports required when printed on the side that doesn't have the sd card slot.
+
+<img src="https://github.com/Terminuszibda/OpenSCAD-projects/blob/main/RaspberryPieMount/images/IMG_3051.JPG" alt="Screw mount" width="300"/>        | <img src="https://github.com/Terminuszibda/OpenSCAD-projects/blob/main/RaspberryPieMount/images/IMG_3057.JPG" alt="Screw mount" width="300"/>
