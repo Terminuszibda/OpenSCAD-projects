@@ -28,7 +28,7 @@ module baseCube(){
 
 color("SlateGray")
 difference(){
-    union(){
+    union(){ 
         minkowski(){
             baseCube();
             sphere(1);
@@ -92,14 +92,13 @@ difference(){
             cube([90,24,36]);
             sphere(1);
         }
-
         translate([45,0,27])
         intersection(){
             import("data/perlinnoise.stl");
             translate([-45,0,7])
             cube([90,24,7]);
         }
-
+        
         intersection(){
 
             translate([45,-21,10])
@@ -111,7 +110,19 @@ difference(){
         }
     }
 
-    translate([-5,-5,5])
-        cube([100,24,25]);
+    translate([-5,-5,-5])
+        cube([100,24,35]);
+
+        translate([25,12,34])
+        MakeSpacerHole(7);
+
+        translate([25,12,25])
+        MakeBoltHole(4);
+
+        translate([65,12,34])
+        MakeSpacerHole(7);
+
+        translate([65,12,25])
+        MakeBoltHole(4);
 
 }
