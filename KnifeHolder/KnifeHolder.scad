@@ -29,6 +29,19 @@ linear_extrude(50)
 polygon(points=[[0,0],[20,0],[30,37.3],[10,37.3]]);
 }
 
+module makeKnifeSlots(){
+    translate([-5,0,-25])
+    knifeSlot();
+    translate([-5,-20,-25])
+    knifeSlot();
+    translate([-5,20,-25])
+    knifeSlot();
+    translate([0,10,5])
+    knifeSlot(slotHeigth=14, slotWidth=1.25);
+    translate([0,-10,5])
+    knifeSlot(slotHeigth=14, slotWidth=1.25);
+}
+
 module knifeSlot(knifeLength = 115, slotWidth = 1.75, slotHeigth = 20){
 color("Red")
     hull(){
@@ -48,16 +61,6 @@ difference(){
 
     frontDetail();
     
-    translate([-5,0,-25])
-    knifeSlot();
-    translate([-5,-20,-25])
-    knifeSlot();
-    translate([-5,20,-25])
-    knifeSlot();
-    translate([0,10,5])
-    knifeSlot(slotHeigth=14, slotWidth=1.25);
-    translate([0,-10,5])
-    knifeSlot(slotHeigth=14, slotWidth=1.25);
-    
+    makeKnifeSlots();
 }
 
