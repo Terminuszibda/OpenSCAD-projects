@@ -31,15 +31,15 @@ polygon(points=[[0,0],[20,0],[30,37.3],[10,37.3]]);
 
 module makeKnifeSlots(){
     translate([-5,0,-25])
-    knifeSlot();
+    knifeSlot(slotWidth=1.95);
     translate([-5,-20,-25])
-    knifeSlot();
+    knifeSlot(slotWidth=1.95);
     translate([-5,20,-25])
-    knifeSlot();
+    knifeSlot(slotWidth=1.95);
     translate([0,10,5])
-    knifeSlot(slotHeigth=14, slotWidth=1.25);
+    knifeSlot(slotHeigth=14, slotWidth=1.55);
     translate([0,-10,5])
-    knifeSlot(slotHeigth=14, slotWidth=1.25);
+    knifeSlot(slotHeigth=14, slotWidth=1.55);
 }
 
 module knifeSlot(knifeLength = 115, slotWidth = 1.75, slotHeigth = 20){
